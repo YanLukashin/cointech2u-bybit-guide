@@ -79,6 +79,11 @@ section{display:flex;flex-direction:column;gap:24px}
 .src{font-size:14px;color:var(--muted)}
 .foot{border-top:1px solid var(--line);padding-top:20px;font-size:13.5px;color:var(--muted);max-width:80ch}
 @media (max-width:560px){.steps{grid-template-columns:1fr}.wrap{gap:48px;padding-block:24px 48px}}
+.start{display:flex;flex-wrap:wrap;gap:14px 28px;align-items:center;justify-content:space-between;padding:18px 20px;border-radius:14px;background:var(--accent-soft);border:1px solid var(--accent)}
+.start>div{min-width:0;flex:1 1 260px;display:flex;flex-direction:column;gap:2px}
+.start-t{font:800 18px var(--display)}
+.cta{flex:none;display:inline-block;padding:12px 20px;border-radius:10px;background:var(--accent);color:var(--bg);font-weight:600;text-decoration:none}
+.cta:hover{filter:brightness(1.08)}
 
 </style>
 <style>body{margin:0}img{max-width:100%}</style>
@@ -90,6 +95,7 @@ section{display:flex;flex-direction:column;gap:24px}
 <p class="eyebrow">BlockCapital · для выпускников</p>
 <h1>CoinTech2u и Bybit: настройка бота с нуля</h1>
 <p class="lead">Семь частей по порядку, 90 шагов: от регистрации на бирже до запуска автоматической торговли. Под каждым шагом — экран, который вы увидите в приложении.</p>
+<div class="start"><div><p class="start-t">Сначала — аккаунт в CoinTech2u</p><p>Зарегистрируйтесь в приложении по ссылке, затем идите по частям ниже.</p></div><a class="cta" href="https://app.cointech2u.com/r/rg7tpmfI" target="_blank" rel="noopener">Зарегистрироваться в CoinTech2u</a></div>
 <ol class="toc"><li><a href="#g1"><span class="toc-n">1</span><span class="toc-t">Регистрация на бирже Bybit</span><span class="toc-c">19 шагов</span></a></li><li><a href="#g2"><span class="toc-n">2</span><span class="toc-t">Двухфакторная защита (2FA) на Bybit</span><span class="toc-c">14 шагов</span></a></li><li><a href="#g3"><span class="toc-n">3</span><span class="toc-t">Подключение Bybit к CoinTech2u через Fast API</span><span class="toc-c">12 шагов</span></a></li><li><a href="#g4"><span class="toc-n">4</span><span class="toc-t">Создание субаккаунта Bybit в CoinTech2u</span><span class="toc-c">5 шагов</span></a></li><li><a href="#g5"><span class="toc-n">5</span><span class="toc-t">Перевод средств на субаккаунт Bybit</span><span class="toc-c">5 шагов</span></a></li><li><a href="#g6"><span class="toc-n">6</span><span class="toc-t">Пополнение Gas Fee: перевод USDT и конвертация в CoinTech2u</span><span class="toc-c">19 шагов</span></a></li><li><a href="#g7"><span class="toc-n">7</span><span class="toc-t">Быстрая настройка (Quick Setup)</span><span class="toc-c">16 шагов</span></a></li></ol>
 <div class="notes">
 <p><b>Кнопки.</b> Названия кнопок даны как на экране, по-английски: <span class="key">Bind API</span>. Если включить в приложении русский язык, подписи будут другими, порядок действий тот же.</p>
